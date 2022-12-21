@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>facebook</h1>
+    </div>
+    <div class="wrapper">
+        
+        <form action="">
+            <div class="p1">
+            <p>create a new account</p>
+            </div>
+            <div>
+        <p class="p2">its quick and easy</p>
+            </div>
+            <div class="first name">
+                <label class="label"></label>
+                <input type="text" placeholder="enter first name" title="enter your name">
+                <label></label>
+                <input type="text" placeholder="enter surname">
+                </div>
+                <div>
+                <label></label>
+                <input type="tel" placeholder="enter phone number">
+                </div>
+                <div>
+                <label></label>
+                <input type="password" placeholder="enter password" maxlength="5">
+            </div>
+                <span>Date of birth</span>
+                <div>
+                <input type="date" placeholder="number" >
+                </div>
+            <div class="radio">
+                    <input type="radio" id="Male" name="fa" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female" value="Female">
+                    <label for="Female">Female</label>
+                    <input type="radio" id="custom" value="Custom">
+                    <label for="custom">Custom</label>
+                    
+            </div>
+            <button>sign up</button>
+        </form>
+
+    </div>
+    <script>
+       // function user(){
+           // var userdata=document.getElementById('name').value;
+          //  console.log(userdata);
+           //parameter declaration
+        //the saved is a variable for local storage
+        //get the element from your html document
+        function userprof(fname, pwd, tel, sName, saved){
+          fname = document.getElementById('fname').value.trim(); 
+          pwd = document.getElementById('pwd').value.trim(); 
+          tel = document.getElementById('tel').value.trim(); 
+          sName = document.getElementById('sName').value.trim(); 
+          //count the characters lenght of the value enter by the user
+          let fname_length=fname.length;
+          let pwd_length=pwd.length;
+          let tel_length=tel.length;
+          let sName_length=sName.length;
+          if(fname_length ==0 ||  pwd_length ==0 || tel_length ==0 || sName_length ==0)
+          alert('hey enter your name');
+        }
+
+        
+    </script>
+    <script src="https://kit.fontawesome.com/43b20d5d1a.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
